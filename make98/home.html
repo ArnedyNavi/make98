@@ -6,17 +6,28 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="screen">
+    <div class="loading-page" id="loadingScreen">
+        <div class="loading-bar">
+            Loading
+            <div style="height: 28px" class="loading" id="loading"> . </div>
+        </div>
+    </div>
+    
+    <div class="screen" id="screen">
         <div class="startbar">
-            <div class="start-button startbutton-unclicked">
+            <div id="startButton" class="start-button startbutton-unclicked" onclick="modifyStart()">
                 <img style="vertical-align: middle" width="35%" src="http://vignette2.wikia.nocookie.net/logopedia/images/3/32/Microsoft_Windows_Compatible_Icon.png/revision/latest/scale-to-width-down/303?cb=20160806162438">
                 <span style="padding-top: 1px"> Start </span>
             </div>
-            <div class="clock">
-                10.53
-            </div>
+            <div class="clock"></div>
         </div>
     </div>
+
+    <div id="menu">
+        <div class="sidebar"></div>
+        <div class="headline"><b>Windows</b> 98</div>
+    </div>
+
     <!-- partial -->
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.4/dayjs.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

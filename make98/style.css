@@ -1,12 +1,39 @@
+@font-face {
+    font-family: arcade;
+    src: url(font/arcade.TTF);
+  }
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: helvetica;
+    
   }
 
+.loading-page{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    cursor: url("images/cursor/cursor.png"), auto;
+}
+
+.loading-bar{
+    position: absolute;
+    border: 1.5px solid white;
+    color: white;
+    width: 50%;
+    height: 60px;
+    left: 25%;
+    top: 40%;
+    font-family: arcade;
+    padding: 3px;
+    font-size: 20px;
+}
+
 .screen {
-    background-color: blue;
+    display: none;
+    background-color: #010080;
     width: 100vw;
     height: 100vh;
 }
@@ -45,3 +72,53 @@
     border-right: 2px solid white;
     border-bottom: 2px solid white;
 }
+
+.clock {
+    position: fixed;
+    right: 3px;
+    bottom: 5px;
+    padding: 2px;
+    border-top: 2px solid grey;
+    border-left: 2px solid grey;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+#menu {
+    position: absolute;
+    bottom: 35px;
+    left: 3px;
+    background-color: #bdbebd;
+    z-index: 10;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    border-right: 2px solid grey;
+    border-bottom: 2px solid grey;
+    display: none;
+  }
+  
+  .sidebar {
+    height: 100%;
+    background: linear-gradient(to bottom, #000080, #1084d0);
+    display: inline-block;
+    width: 25px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+  }
+  
+  .headline {
+    transform: rotate(-90deg);
+    transform-origin: 0% 0%;
+    width: 150%;
+    padding-top: 4px;
+    padding-bottom: 3px;
+    padding-left: 0px;
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+    margin-bottom: -15px;
+  }
+  
