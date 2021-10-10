@@ -324,3 +324,8 @@ var setIcon = function () {
     $(this).css("background-image", "url(" + icon + ")");
   }
 };
+
+function closeScreen() {
+  document.getElementById('closeScreen').style.display = "block";
+
+}

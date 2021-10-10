@@ -14,7 +14,9 @@
     </div>
     
     <div class="screen" id="screen">
-        <div class="desktop"></div>
+        <div class="desktop">
+          <div class="title">Make 98</div>
+        </div>
         <div class="startbar">
             <div id="startbutton" class="start-button startbutton-unclicked" onclick="modifyStart()">
                 <img style="vertical-align: middle" width="35%" src="http://vignette2.wikia.nocookie.net/logopedia/images/3/32/Microsoft_Windows_Compatible_Icon.png/revision/latest/scale-to-width-down/303?cb=20160806162438">
@@ -205,11 +207,13 @@
               class="item"
               data-icon="https://res.cloudinary.com/penry/image/upload/v1474990281/shut_down_normal_t24or4.ico"
             >
-              Shutdown
+              <span id="shutdown" onclick="closeScreen()">Shutdown</span>
             </li>
           </ul>
     </div>
-
+    <div class="closeScreen" id="closeScreen">
+      
+    </div>
     <!-- partial -->
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.4/dayjs.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

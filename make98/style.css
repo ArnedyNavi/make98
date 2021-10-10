@@ -33,9 +33,21 @@
 
 .screen {
     display: none;
-    background-color: black;
+    background-image: url('images/background.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100vw;
     height: 100vh;
+}
+
+.title {
+  font-family: arcade;
+  color: rgb(255, 174, 0);
+  font-size: 100px;
+  position: absolute;
+  left: 5%;
+  top: 40%;
 }
 
 .startbar {
@@ -332,4 +344,15 @@
 
 .minimize {
     cursor: pointer;
+}
+
+.closeScreen {
+  display: none;
+  z-index: 9999;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
