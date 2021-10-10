@@ -198,7 +198,6 @@ var getTopZIndex = function () {
 };
 
 var openWindow = function (id) {
-  $('.window').resizable("enable");
   $("#" + id).show();
   $("#" + id).css("z-index", getTopZIndex() + 1);
 };
